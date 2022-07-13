@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/Library.css">
+    <link rel="stylesheet" href="stylesheets/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Library</title>
+  </head>
+
+  <body>
+    <section class="main-section">
+      <nav>
+        <div class="logo">
+          <h1>Personal Library</h1>
+        </div>
+        <div class="nav-right">
+          <div class="add-button">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+            </svg>
+            <h2>ADD BOOK</h2>
+          </div>
+          <button class="dropDown-button">
+            <svg style="width:32px;height:32px" aria-hidden="true" tabindex="O" viewBox="0 0 24 24">
+              <path fill="#d9d9d9"
+                d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+            </svg>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <h2>Logged in as</h2>
+            <h1 class='dropdown-email'>Jeanty@email.com</h1>
+            <div></div>
+            <h2 class="signOut-button">Sign out</h2>
+          </div>
+        </div>
+
+      </nav>
+      <div class="banner-container">
+        <div class="banner1">
+          <h2>The Total Amount of Books: 0</h2>
+          <h2></h2>
+        </div>
+        <div class="banner2">
+          <h2>Amount of Books Completed: 0</h2>
+          <h2></h2>
+        </div>
+        <div class="banner3">
+          <h2>Amount of Books to Read: 0</h2>
+          <h2></h2>
+        </div>
+        <div class="banner4">
+          <h2>Total Amount of Pages Completed: 0</h2>
+          <h2></h2>
+        </div>
+      </div>
+      <section class="books-container">
+        <!-- <div class="book">
+      <h2 class="title">The Paddington Bear</h2>
+      <div>
+        <div class="subtext">
+          <p class="pages">214 pages</p>
+          <p class="author"> · by J.K.Rowling</p>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Mi condimentum proin mi rutrum. Netus volutpat, aliquet proin porta cursus eu eu. 
+          Enim amet, est at quis pellentesque morbi.
+        </p>
+      </div>
+      <div class="book-button-container">
+        <div class="completed-button">
+          <label class="completed-label" for="completed">HAVE YOU READ IT?</label>
+          <input type="checkbox" name="completed" class="completed-checkbox" checked="true">
+        </div>
+        <div class="remove-button">
+          <h2>REMOVE</h2>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+          </svg>
+        </div>
+      </div>
+    </div> -->
+      </section>
+      <button class="top-button">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+        </svg>
+        <h2>BACK TO THE TOP</h2>
+      </button>
+
+      <div class='overlay'></div>
+      <div class="add-modal-container">
+        <form action="" class="add-modal">
+          <h2>Add Book</h2>
+          <input class="add-modal-input1" required type="text" placeholder="Title">
+          <div class="input-container">
+            <input class="add-modal-input2" required type="text" placeholder="Author">
+            <input class="add-modal-input3" required type="number" min='2' max="100 000" placeholder="Pages">
+          </div>
+          <textarea name="" id="" cols="30" required rows="5" placeholder="Description"
+            class='add-modal-input4'></textarea>
+          <div class='modal-bottom'>
+            <div class='completed-modal-button'>
+              <label class="completed-label" for="completed">HAVE YOU READ IT?</label>
+              <input type="checkbox" name="completed" class="completed-modal-checkbox" checked="true">
+            </div>
+            <button class="add-modal-button" type='submit'>
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+              </svg>
+              <h2>ADD BOOK</h2>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- <section class="add-modal-container">
+    
+    <div class="add-modal">
+      <h2>Add Book</h2>
+      <input class="add-modal-input1" type="text" placeholder="Title">
+      <div class="input-container">
+        <input class="add-modal-input2" type="text" placeholder="Author">
+        <input class="add-modal-input3" type="text" placeholder="Pages">
+      </div>
+     <textarea name="" id="" cols="30" rows="5" placeholder="Description"></textarea>
+      <div class="add-modal-button">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+        </svg>
+        <h2>ADD BOOK</h2>
+      </div>
+    </div>
+  </section> -->
+    </section>
+    <section class="account-section">
+      <section class="login-left">
+        <div class="login-title">
+          <h1>Your Personal Library</h1>
+          <h2>Keep track of the books you want to read and the books you have already read.</h2>
+        </div>
+        <div class="login-left-link">
+          Photo by <a
+            href="https://unsplash.com/@alexlvrs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Alex Lvrs</a> on <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+      </section>
+      <section class="login-right">
+        <form action="" class="login">
+          <h1>Welcome</h1>
+
+          <div class="form-middle">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required id="email" placeholder="user@email.com">
+
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" required id="password" minlength="6" placeholder="user123">
+
+            <div class="form-button-container">
+              <button class="login-button">LOGIN</button>
+              <button class="createAccount-button">CREATE ACCOUNT</button>
+            </div>
+          </div>
+
+        </form>
+      </section>
+    </section>
+    <script type="module" src="./scripts/firebase.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+
+</html>
